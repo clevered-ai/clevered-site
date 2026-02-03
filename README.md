@@ -1,2 +1,2 @@
-# clevered-site
-Website for clevered.ai
+# Clevered.ai Landing Page
+This is the public landing page for the Clevered.AI Chrome Extension.
