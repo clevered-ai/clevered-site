@@ -11,7 +11,7 @@
             color: #1e293b;
             text-align: center;
             margin: 0;
-            padding: 0px;
+            padding: 40px 20px;
             min-height: 100vh;
             display: flex;
             align-items: center;
@@ -20,9 +20,14 @@
         .container {
             max-width: 520px;
         }
+        .logo {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 20px;
+        }
         h1 {
-            font-size: 2.6rem;
-            margin-bottom: 12px;
+            font-size: 2.4rem;
+            margin-bottom: 16px;
             color: #FF6B00;
         }
         p {
@@ -37,8 +42,8 @@
         }
         a {
             display: inline-block;
-            margin-top: 0px;
-            padding: 14px;
+            margin-top: 24px;
+            padding: 14px 32px;
             background-color: #FF6B00;
             color: white;
             text-decoration: none;
@@ -53,7 +58,12 @@
 </head>
 <body>
     <div class="container">
-        <h1>✅ Welcome to Clevered.ai Pro!</h1>
+        <!-- Your logo here -->
+        <img src="https://clevered.ai/icon128.png" 
+             alt="Clevered.ai Logo" 
+             class="logo">
+
+        <h1>Welcome to Clevered.ai Pro!</h1>
         
         <p>Your Pro subscription is now active.</p>
         
@@ -61,7 +71,8 @@
         
         <p>You can now safely close this tab.</p>
         
-        <a href="https://chromewebstore.google.com/detail/cleveredai-prompt-enhance/ebnicjchblfihldhdikainmgfecphfgm" target="_blank">
+        <a href="https://chromewebstore.google.com/detail/cleveredai-prompt-enhance/ebnicjchblfihldhdikainmgfecphfgm" 
+           target="_blank">
             Open Clevered.ai Extension
         </a>
     </div>
