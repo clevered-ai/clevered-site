@@ -6,8 +6,8 @@
     <title>Clevered.ai | Enhance Your Prompts</title>
     <style>
         :root {
-            /* Changed primary from blue to Orange */
             --primary: #FF6B00; 
+            --primary-hover: #E66000;
             --dark: #1e293b;
             --light: #f8fafc;
         }
@@ -29,31 +29,59 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
+            align-items: center;
+        }
+        /* New Logo Styling */
+        .logo {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 1.5rem;
+            filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1));
         }
         h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-            /* Gradient now goes from Orange to a deeper Sunset Red */
+            font-size: 3.5rem;
+            margin: 0 0 0.5rem 0;
             background: linear-gradient(to right, #FF6B00, #ff9500);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            font-weight: 800;
         }
         p {
             font-size: 1.25rem;
             color: #64748b;
             max-width: 600px;
-            margin: 0 auto;
+            margin: 0 auto 2.5rem auto;
+            line-height: 1.6;
         }
-        .badge {
-            /* Badge updated to soft orange theme */
+        .cta-button {
+            background-color: var(--primary);
+            color: white;
+            padding: 1rem 2.5rem;
+            border-radius: 12px;
+            font-weight: 700;
+            font-size: 1.25rem;
+            text-decoration: none;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 15px rgba(255, 107, 0, 0.3);
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .cta-button:hover {
+            background-color: var(--primary-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 107, 0, 0.4);
+        }
+        .version-tag {
             background: #fff0e6;
             color: #cc5500;
-            padding: 0.5rem 1rem;
+            padding: 0.4rem 0.8rem;
             border-radius: 9999px;
             font-weight: 600;
-            font-size: 0.875rem;
-            margin-bottom: 2rem;
-            display: inline-block;
+            font-size: 0.75rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
         }
         footer {
             padding: 2rem;
@@ -67,7 +95,6 @@
             color: #64748b;
             text-decoration: none;
             margin: 0 10px;
-            transition: color 0.2s;
         }
         footer a:hover {
             color: var(--primary);
@@ -81,9 +108,17 @@
 <body>
 
     <div class="container">
-        <div class="badge">Coming Soon to Chrome Web Store</div>
+        <img src="icon128.png" alt="Clevered.ai Logo" class="logo">
+        
+        <div class="version-tag">Version 1.1.0 Now Live</div>
         <h1>Clevered.ai</h1>
-        <p>The intelligent prompt engineer for your browser. Enhance your AI interactions with precision and clarity.</p>
+        <p>The intelligent prompt engineer for your browser. Enhance your AI interactions with precision on ChatGPT, Claude, Gemini, and Grok.</p>
+        
+        <a href="https://chromewebstore.google.com/detail/cleveredai-prompt-enhance/ebnicjchblfihldhdikainmgfecphfgm" 
+           class="cta-button" 
+           target="_blank">
+            Add to Chrome — It's Free
+        </a>
     </div>
 
     <footer>
